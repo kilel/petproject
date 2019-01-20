@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="utils/common.html :: common_html_head(~{::title})">
+    <title>The Pet Project</title>
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.min.css"
+          th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+
+<!-- header -->
+<div th:replace="utils/common.html :: common_page_header"></div>
+
+<main role="main" class="container">
+    <h1>Welcome to the Pet Project</h1>
+    <p>Sign In to Sign Up to start sharing your pet's story of life!</p>
+</main>
+
+<div th:replace="utils/common.html :: common_page_footer(_)"></div>
+</body>
+</html>
